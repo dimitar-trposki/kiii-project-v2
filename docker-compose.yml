@@ -33,10 +33,10 @@ services:
       context: ./bookeshopfrontend
     image: dimitartrposki/kiii-project-v2:frontend
     ports:
-      - "5173:5173"
+      - "5174:80"
     depends_on:
       - backend
-    command: npm run dev -- --host
+#    command: npm run dev -- --host
 
 volumes:
   pgdata:
